@@ -18,7 +18,7 @@ typedef struct clientinfo
     unsigned char state=0;
     int fd;
     long t;
-    void *n;
+    struct clientinfo* n=NULL;
 } CLIENTINFO,*PCLIENTINFO;
 
 int main(int argc,char**argv){
